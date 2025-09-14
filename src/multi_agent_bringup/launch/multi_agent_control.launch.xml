@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="turtlesim" exec="turtlesim_node" />
+    <node pkg="multi_agent_control" exec="controller">
+        <param from="$(find-pkg-share multi_agent_bringup)/config/catch_them_all_config.yaml" />
+    </node>
+    <node pkg="multi_agent_control" exec="spawner" >
+        <param from="$(find-pkg-share multi_agent_bringup)/config/catch_them_all_config.yaml" />
+    </node>
+</launch>
