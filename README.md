@@ -15,7 +15,7 @@ ros2-multi-agent-control/
 ├── src/
 │ ├── multi_agent_bringup/ # Launch and config files
 │ ├── multi_agent_control/ # Core logic (controller & spawner)
-│ └── multi_agent_interfaces/ # Custom messages and services
+│ ├── multi_agent_interfaces/ # Custom messages and services
 ├── build/ # Build output (ignored in git)
 ├── install/ # Install space (ignored in git)
 ├── log/ # Logs (ignored in git)
@@ -26,3 +26,4 @@ ros2-multi-agent-control/
 - `turtlesim_controller.py` → Control algorithm to chase and catch the nearest turtle.
 # Launch Command
 ros2 launch multi_agent_bringup multi_agent_control.launch.xml
+
